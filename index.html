@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora 13º Salário</title>
+  <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <section class="calculator">
+    <div class="calculator__header">
+      <div class="calculator__title-wrapper">
+        <i class='bx  bx-calculator'></i>
+        <h1>Calcule agora o Décimo Terceiro Salário</h1>
+      </div>
+      <p class="calculator__description">Descubra o valor que você deve receber de décimo terceiro salário.</p>
+    </div>
+
+    <form class="calculator__Form">
+      <div class="input-group">
+        <label for="salario">Salário Bruto</label>
+        <input id="salario" type="number" min="100" placeholder="R$ 4000,00 ">
+      </div>
+
+      <div class="input-group">
+        <label for="dependentes">Numero de dependentes</label>
+        <input id="dependentes" type="number" min="0" placeholder="2 ">
+      </div>
+
+      <div class="input-group">
+        <label for="meses">Meses Trabalhados</label>
+        <input id="meses" type="number" min="12" placeholder="12">
+      </div>
+
+      <div class="input-group">
+        <label for="parcela">Escolha a parcela</label>
+        <select name="" id="parcela">
+          <option value="">Parcela Única</option>
+          <option value="">Primeira Parcela</option>
+          <option value="">Segunda Parcela</option>
+        </select>
+      </div>
+
+      <div class="calcular__actions">
+        <button>Limpar</button>
+        <button>Calcular 13º Salário</button>
+      </div>
+
+    </form>
+
+
+  </section>
+
+</body>
+
+</html>
