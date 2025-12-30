@@ -9,10 +9,9 @@
   <link rel="stylesheet" href="style.css">
 
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
 
 </head>
@@ -30,38 +29,44 @@
     <form class="calculator__Form">
       <div class="input-group">
         <label for="salario">Salário Bruto</label>
-        <input id="salario" type="number" min="100" placeholder="R$ 4000,00 ">
+        <input id="salario" type="text" min="100" placeholder="R$ 4000,00 ">
       </div>
 
       <div class="input-group">
         <label for="dependentes">Numero de dependentes</label>
-        <input id="dependentes" type="number" min="0" placeholder="2 ">
+        <input id="dependentes" type="number" min="0" placeholder="0 ">
       </div>
 
       <div class="input-group">
         <label for="meses">Meses Trabalhados</label>
-        <input id="meses" type="number" min="12" placeholder="12">
+        <input id="meses" type="number" min="1" max="12" placeholder="12">
       </div>
 
       <div class="input-group">
         <label for="parcela">Escolha a parcela</label>
         <select name="" id="parcela">
-          <option value="">Parcela Única</option>
-          <option value="">Primeira Parcela</option>
-          <option value="">Segunda Parcela</option>
+          <option value="unica">Parcela Única</option>
+          <option value="primeira">Primeira Parcela</option>
+          <option value="segunda">Segunda Parcela</option>
         </select>
       </div>
 
       <div class="calcular__actions">
-        <button>Limpar</button>
-        <button>Calcular 13º Salário</button>
+        <button id="clear">Limpar</button>
+        <button id="calculate">Calcular 13º Salário</button>
       </div>
 
     </form>
-
+    
+    <div class="calculator__summary">
+      <span class="calculator__summary-label">Você vai receber</span>
+      <hr>
+      <strong class="calculator__summary-value">R$ 2.000,00</strong>
+    </div>
 
   </section>
 
+  <script type="module" src="js/app.js"></script>
 </body>
 
 </html>
